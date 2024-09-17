@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Auto Clicker</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Auto Clicker Active</h2>
-    <p>This extension will automatically click the countdown at 2 minutes.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Click Status</title>
+  <link rel="stylesheet" href="popup.css"> <!-- Optional: link to a CSS file -->
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Auto Clicker</h1>
+    <div class="status-container">
+      <p>Countdown Element: <span id="status">Checking...</span></p>
+      <p>Counter: <span id="counter">0</span></p>
+    </div>
+    <button id="startButton">Start Auto Click</button>
+  </div>
+  
+  <script src="popup.js"></script> <!-- Link to your popup script -->
+</body>
 </html>

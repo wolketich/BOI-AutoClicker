@@ -1,33 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "Auto Click for Bank of Ireland",
-    "version": "1.0",
-    "description": "Automatically clicks on the timer when it reaches 2 minutes.",
-    "permissions": [
-      "activeTab",
-      "scripting",
-      "storage"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://*/*"],
-        "js": ["content.js"]
-      }
-    ],
-    "icons": {
-      "16": "icons/icon-16.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icons/icon-16.png",
-        "48": "icons/icon-48.png",
-        "128": "icons/icon-128.png"
-      }
+  "manifest_version": 3,
+  "name": "Auto Click Extension",
+  "version": "1.1",
+  "permissions": ["tabs", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
-  }
+  ]
+}
