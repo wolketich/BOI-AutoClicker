@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto Click Status</title>
-  <link rel="stylesheet" href="popup.css"> <!-- Optional: link to a CSS file -->
+  <title>Crypto Auto Clicker</title>
+  <link rel="stylesheet" href="popup.css"> <!-- Link to external CSS file -->
 </head>
 <body>
   <div class="popup-container">
-    <h1>Auto Clicker</h1>
+    <h1>Auto Clicker <span class="highlight">Crypto</span></h1>
     <div class="status-container">
-      <p>Countdown Element: <span id="status">Checking...</span></p>
-      <p>Counter: <span id="counter">0</span></p>
+      <p>Countdown Element: <span id="status" class="status-text">Checking...</span></p>
+      <p>Counter: <span id="counter" class="counter-text">0</span></p>
     </div>
-    <button id="startButton">Start Auto Click</button>
+    <button id="startButton" class="btn">Start Auto Click</button>
   </div>
   
   <script src="popup.js"></script> <!-- Link to your popup script -->
