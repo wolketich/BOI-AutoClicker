@@ -1,8 +1,8 @@
-let autoClickEnabled = false;
+let autoClickEnabled = true;
 
 // Load saved state
 chrome.storage.sync.get(['autoClickEnabled'], function(result) {
-  autoClickEnabled = result.autoClickEnabled || false;
+  autoClickEnabled = result.autoClickEnabled || true;
   updateButton();
 });
 
